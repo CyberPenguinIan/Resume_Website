@@ -9,9 +9,9 @@
 </head>
 <body>
     <!--navbar-->
-    <nav class="navbar sticky-top navbar-expand-md bg-warning navbar-light">        
+    <nav class="navbar sticky-md-top p-2 navbar-expand-md bg-warning navbar-light py-2">        
         <div class="container-fluid">
-            <a href="#" class="navbar-brand">Ian Stolz</a>
+            <a href="#" class="navbar-brand">IAN</a>
             <!--Toggle button-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <span class="navbar-toggler-icon"></span>
@@ -23,18 +23,44 @@
                         <a class="nav-link" aria-current="page" href="#aboutme">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#references">About Me</a>
+                        <a class="nav-link" aria-current="page" href="#references">Resume</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#aboutme">About Me</a>
+                        <a class="nav-link" aria-current="page" href="#aboutme">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#aboutme">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#aboutme">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!--Showcase carousel-->
-    <div class="container-lg bg-dark">
+    <!--Showcase-->
+    <section class="bg-dark text-light p-4 text-centre text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-centre justify-content-between">
+                <div>                   
+                    <h1>Ian Stolz</h1>  
+                    <h2>I'm a <span class="text-warning">
+                        junior software developer
+                    </span></h2>      
+                    <p class="lead my-4">
+                        Welcome to my website. Here you can learn a more about me and what I do.
+                        I want to thank you for taking an interest in me and hope the time you 
+                        spend on my website will be worth it. 
+                    </p>
+                </div>
+                <img class="img-fluid w-50 d-none d-sm-block p-1" src="Images\PlaceHolder.jpg" alt="">               
+            </div>
+        </div>
+    </section>
+
+    <!--Carousel-->
+    <div class="container-lg p-1 bg-dark">
         <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
             <ol class="carousel-indicators">
                 <li
@@ -112,7 +138,6 @@
         
     </div>
     
-
     <!--JavaScript bundle cdn code for bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
