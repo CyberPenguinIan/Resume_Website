@@ -1,11 +1,9 @@
-html,body 
-{
+html,body {
   font-family: 'Exo', sans-serif;
   font-size: 18px;
 }
   
-h1,h2 
-{
+h1,h2 {
   font-family: "Exo", sans-serif;
   font-weight: 200;
   margin: 0.4em 0;
@@ -13,8 +11,7 @@ h1,h2
 
 h1 { font-size: 3.5em; }
 
-h2 
-{
+h2 {
   font-size: 2em;
 }
 
@@ -51,4 +48,56 @@ body {
 
 .accordion-button::after{
   filter: invert(100%)
+}
+
+#container {
+  width: 100;
+}
+
+#text-wrapper{
+  height: 50px;
+  overflow: hidden;
+}
+
+#rotating-text span {
+  color: #f85616;
+  padding: 4px 12px;
+  height: 45px;
+  margin-bottom: 45px;
+  display: block;
+  width: 500px;
+  margin: 0 auto;
+}
+
+#rotating-text {
+  display: block;
+  animation: rotate 7s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translateY(-160px);
+  }
+  5% {
+    transform: translateY(-90px);
+  }
+  33% {
+    transform: translateY(-90px);
+  }
+  38% {
+    transform: translateY(-45px);
+  }
+  66% {
+    transform: translateY(-45px);
+  }
+  71% {
+    transform: translateY(0);
+  }
+  99.9% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-160px);
+  } 
+  
 }
