@@ -55,13 +55,14 @@ body {
 }
 
 #text-wrapper{
-  height: 50px;
+  display: inline-block;
+  height: 45px;
   overflow: hidden;
+  vertical-align: bottom;
 }
 
 #rotating-text span {
   color: #f85616;
-  padding: 4px 12px;
   height: 45px;
   margin-bottom: 45px;
   display: block;
@@ -71,33 +72,24 @@ body {
 
 #rotating-text {
   display: block;
-  animation: rotate 7s linear infinite;
+  animation: rotate 9s linear infinite;
 }
 
 @keyframes rotate {
-  0% {
-    transform: translateY(-160px);
-  }
-  5% {
-    transform: translateY(-90px);
-  }
-  33% {
-    transform: translateY(-90px);
-  }
-  38% {
-    transform: translateY(-45px);
-  }
-  66% {
-    transform: translateY(-45px);
-  }
-  71% {
-    transform: translateY(0);
-  }
-  99.9% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-160px);
-  } 
+   0% {
+        transform: translateY(0);
+    }
+
+    33.33% {
+        transform: translateY(-45px);
+    }
+
+    66.66% {
+        transform: translateY(-90px);
+    }
+
+    100% {
+        transform: translateY(-135px);
+    }
   
 }
